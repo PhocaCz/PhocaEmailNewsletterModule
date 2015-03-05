@@ -1,0 +1,1 @@
+Phoca Email Newsletter Module is Joomla! CMS extension. Module which displays subscription form.
