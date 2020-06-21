@@ -1,0 +1,18 @@
+{
+	"author": "Jan Pavelka (www.phoca.cz)",
+	"authorUrl": "https://www.phoca.cz",
+	"copyright": "Jan Pavelka",
+	"license": "GNU/GPL",
+	"projectName": "PhocaEmailNewsletterModule",
+	"extensionName": "Phoca Email Newsletter Module",
+	"projectInitials" : "PE",				  
+	"description": "Phoca Email Newsletter Module - a Joomla! CMS module which displays newsletter sign up form.",
+	"projectUrl": "https://www.phoca.cz/phoca-email-newsletter-module",
+	"projectDocumentationUrl": "https://www.phoca.cz/documentation/category/120-phoca-email-newsletter-module",
+	"projectMainComponent": "Phoca Email",
+	"projectMainComponentInfoUrl": "https://www.phoca.cz/project/phocaemail-joomla-email",
+	"projectDemo" : {
+		"Phoca": "https://www.phoca.cz"
+	},
+	"projectColor": "#3366CC"
+}

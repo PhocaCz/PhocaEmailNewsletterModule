@@ -1,62 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" client="site" method="upgrade" version="3">
+<extension type="module" client="site" method="upgrade" version="3.9">
 	<name>mod_phocaemail_newsletter</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>16/08/2014</creationDate>
+	<creationDate>21/06/2020</creationDate>
 	<authorEmail></authorEmail>
-	<authorUrl>www.phoca.cz</authorUrl>
+	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>3.0.1</version>
+	<version>3.1.0</version>
 	<description>MOD_PHOCAEMAIL_NEWSLETTER_DESCRIPTION</description>
+	<projectName>PhocaEmailNewsletterModule</projectName>
 
 	<files>
-		<folder>language</folder>
 		<folder>tmpl</folder>
+		<filename module="mod_phocaemail_newsletter">index.html</filename>
 		<filename module="mod_phocaemail_newsletter">mod_phocaemail_newsletter.php</filename>
-		<filename>index.html</filename>
 	</files>
+
 	<languages>
 		<language tag="en-GB">language/en-GB/en-GB.mod_phocaemail_newsletter.ini</language>
 		<language tag="en-GB">language/en-GB/en-GB.mod_phocaemail_newsletter.sys.ini</language>
 	</languages>
 	
-<config>
+	<config>
 		<fields name="params">
 			<fieldset name="basic">
 			
 			
-		<field name="description" type="textarea" rows="2" cols="26" default="" label="MOD_PHOCAEMAIL_NEWSLETTER_DESCRIPTION_LABEL" description="MOD_PHOCAEMAIL_NEWSLETTER_DESCRIPTION_DESC" />
+		<field name="description" type="textarea" rows="2" cols="26" default="" label="MOD_PHOCAEMAIL_NEWSLETTER_DESCRIPTION_LABEL" description="MOD_PHOCAEMAIL_NEWSLETTER_DESCRIPTION_DESC"/>
 		
-		<field name="display_mailing_list" type="list" default="0" label="COM_PHOCAEMAIL_FIELD_DISPLAY_MAILING_LIST_LABEL" description="COM_PHOCAEMAIL_FIELD_DISPLAY_MAILING_LIST_DESC">
-	<option value="0">MOD_PHOCAEMAIL_NEWSLETTER_PHOCAEMAIL_NO</option>
-	<option value="1">MOD_PHOCAEMAIL_NEWSLETTER_PHOCAEMAIL_YES</option>
+		<field name="display_form_link" type="list" default="1" label="MOD_PHOCAEMAIL_NEWSLETTER_FIELD_DISPLAY_FORM_LINK_LABEL" description="MOD_PHOCAEMAIL_NEWSLETTER_FIELD_DISPLAY_FORM_LINK_DESC">
+	<option value="1">MOD_PHOCAEMAIL_NEWSLETTER_FORM</option>
+	<option value="2">MOD_PHOCAEMAIL_NEWSLETTER_LINK</option>
+	<option value="3">MOD_PHOCAEMAIL_NEWSLETTER_BUTTON</option>
 </field>
 		
+		
+		<field name="link_text" type="text" default="" label="MOD_PHOCAEMAIL_NEWSLETTER_CUSTOM_LINK_TEXT_LABEL" description="MOD_PHOCAEMAIL_NEWSLETTER_CUSTOM_LINK_TEXT_DESC"/>
 		
 			</fieldset>
 			
 			
 			<fieldset name="advanced">
 		
-<field
-name="moduleclass_sfx"
-type="text"
-label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
-description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+<field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC"/>
 				
-<field name="module_css_style" type="text" label="MOD_PHOCAEMAIL_NEWSLETTER_CSS_STYLE_LABEL" description="MOD_PHOCAEMAIL_NEWSLETTER_CSS_STYLE_DESC" />
+<field name="module_css_style" type="text" label="MOD_PHOCAEMAIL_NEWSLETTER_CSS_STYLE_LABEL" description="MOD_PHOCAEMAIL_NEWSLETTER_CSS_STYLE_DESC"/>
 				
-<field
-name="cache"
-type="list"
-default="0"
-label="COM_MODULES_FIELD_CACHING_LABEL"
-description="COM_MODULES_FIELD_CACHING_DESC">
-<option
-	value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+<field name="cache" type="list" default="0" label="COM_MODULES_FIELD_CACHING_LABEL" description="COM_MODULES_FIELD_CACHING_DESC">
+<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
 </field>
 			</fieldset>	
 		</fields>
 	</config>
+
+	<updateservers>
+		<server type="extension" name="MOD_PHOCAEMAIL_NEWSLETTER" priority="1"><![CDATA[https://raw.githubusercontent.com/PhocaCz/PhocaEmailNewsletterModule/master/manifest.xml]]></server>
+	</updateservers>
 </extension>
