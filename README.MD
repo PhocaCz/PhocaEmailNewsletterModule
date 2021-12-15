@@ -2,7 +2,7 @@
 
 
 
-![Phoca Email Newsletter Module](https://github.com/PhocaCz/PhocaEmailNewsletterModule/blob/master/mod_phocaemail_newsletter.png)
+![Phoca Email Newsletter Module](https://github.com/PhocaCz/PhocaEmailNewsletterModule/blob/master/mod_phocaemail_newsletter.png?raw=true)
 
 # Phoca Email Newsletter Module
 
@@ -52,9 +52,13 @@ Phoca Email Newsletter Module - a Joomla! CMS module which displays newsletter s
 
 
 
-## Version
+## Version (Joomla! 3.x)
 
 3.1.0
+
+## Version (Joomla! 4.x)
+
+4.0.0
 
 
 

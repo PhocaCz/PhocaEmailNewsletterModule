@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" client="site" method="upgrade" version="3.9">
+<extension type="module" client="site" method="upgrade" version="4.0">
 	<name>mod_phocaemail_newsletter</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>21/06/2020</creationDate>
+	<creationDate>15/12/2021</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>3.1.0</version>
+	<version>4.0.0</version>
 	<description>MOD_PHOCAEMAIL_NEWSLETTER_DESCRIPTION</description>
 	<projectName>PhocaEmailNewsletterModule</projectName>
 
@@ -33,6 +33,7 @@
 	<option value="1">MOD_PHOCAEMAIL_NEWSLETTER_FORM</option>
 	<option value="2">MOD_PHOCAEMAIL_NEWSLETTER_LINK</option>
 	<option value="3">MOD_PHOCAEMAIL_NEWSLETTER_BUTTON</option>
+    <option value="4">MOD_PHOCAEMAIL_NEWSLETTER_BUTTON_TOGETHER_WITH_FORM_FIELD</option>
 </field>
 		
 		

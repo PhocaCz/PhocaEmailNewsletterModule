@@ -21,6 +21,7 @@ $lang->load('com_phocaemail');
 JHtml::stylesheet('media/com_phocaemail/css/main.css' );
 require_once( JPATH_ADMINISTRATOR.'/components/com_phocaemail/helpers/phocaemailutils.php');
 require_once( JPATH_ADMINISTRATOR.'/components/com_phocaemail/helpers/phocaemaillists.php');
+require_once( JPATH_SITE.'/components/com_phocaemail/helpers/routerrules.php');
 require_once( JPATH_SITE.'/components/com_phocaemail/helpers/route.php');
 
 
@@ -30,7 +31,7 @@ $db 		= JFactory::getDBO();
 $app 		= JFactory::getApplication('site');
 $menu  		= $app->getMenu();
 $document	= JFactory::getDocument();
-		
+
 // PARAMS
 $paramsC 				= JComponentHelper::getParams('com_phocaemail') ;
 
@@ -39,6 +40,7 @@ $display_mailing_list 	= $paramsC->get( 'display_mailing_list', 0 );
 $display_form_link		= $params->get( 'display_form_link', 1);
 $link_text				= $params->get( 'link_text', '');
 
+$moduleclass_sfx 		= htmlspecialchars($params->get('moduleclass_sfx'), ENT_COMPAT, 'UTF-8');
 
 if ($link_text == '') {
 	$link_text = 'MOD_PHOCAEMAIL_NEWSLETTER_SUBSCRIBE_TO_OUR_NEWSLETTER';
