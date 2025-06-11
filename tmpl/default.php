@@ -25,7 +25,7 @@ echo '<div class="pc-email-newsletter-mod '.$moduleclass_sfx .'">';
 	if ($display_form_link == 2) {
 
 		// LINK
-		echo '<div class=""><a href="'.JRoute::_($link).'">'.strip_tags($link_text).'</a></div>';
+		echo '<div class=""><a href="'.Route::_($link).'">'.strip_tags($link_text).'</a></div>';
 	} else if ($display_form_link == 3) {
 
 		// BUTTON

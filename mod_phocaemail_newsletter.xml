@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<extension type="module" client="site" method="upgrade" version="4.0">
+<extension type="module" client="site" method="upgrade" version="5.0">
 	<name>mod_phocaemail_newsletter</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>15/12/2021</creationDate>
+	<creationDate>11/06/2025</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>4.0.0</version>
+	<version>5.1.0</version>
 	<description>MOD_PHOCAEMAIL_NEWSLETTER_DESCRIPTION</description>
 	<projectName>PhocaEmailNewsletterModule</projectName>
 
