@@ -62,7 +62,7 @@ Phoca Email Newsletter Module - a Joomla! CMS module which displays newsletter s
 
 ## Version (Joomla! 5.x)
 
-5.1.0
+5.1.1
 
 
 
