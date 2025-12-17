@@ -26,7 +26,10 @@ if (!ComponentHelper::isEnabled('com_phocaemail', true)) {
 $lang = Factory::getLanguage();
 //$lang->load('com_phocaemail.sys');
 $lang->load('com_phocaemail');
-HTMLHelper::stylesheet('media/com_phocaemail/css/main.css' );
+$app = Factory::getApplication();
+$wa  = $app->getDocument()->getWebAssetManager();
+$wa->registerAndUseStyle('com_phocaemail.main', 'media/com_phocaemail/css/main.css', array('version' => 'auto'));
+//HTMLHelper::stylesheet('media/com_phocaemail/css/main.css' );
 //require_once( JPATH_ADMINISTRATOR.'/components/com_phocaemail/helpers/phocaemailutils.php');
 //require_once( JPATH_ADMINISTRATOR.'/components/com_phocaemail/helpers/phocaemaillists.php');
 //require_once( JPATH_SITE.'/components/com_phocaemail/helpers/routerrules.php');
@@ -36,7 +39,6 @@ HTMLHelper::stylesheet('media/com_phocaemail/css/main.css' );
 
 $user 		= Factory::getUser();
 $db 		= Factory::getDBO();
-$app 		= Factory::getApplication('site');
 $menu  		= $app->getMenu();
 $document	= Factory::getDocument();
 
