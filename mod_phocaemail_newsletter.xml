@@ -2,18 +2,20 @@
 <extension type="module" client="site" method="upgrade" version="6.0">
 	<name>mod_phocaemail_newsletter</name>
 	<author>Jan Pavelka (www.phoca.cz)</author>
-	<creationDate>17/12/2025</creationDate>
+	<creationDate>31/08/2026</creationDate>
 	<authorEmail></authorEmail>
 	<authorUrl>https://www.phoca.cz</authorUrl>
 	<copyright>Jan Pavelka</copyright>
 	<license>GNU/GPL</license>
-	<version>6.0.0</version>
+	<version>6.1.0</version>
 	<description>MOD_PHOCAEMAIL_NEWSLETTER_DESCRIPTION</description>
 	<projectName>PhocaEmailNewsletterModule</projectName>
 
 	<files>
 		<folder>tmpl</folder>
+		<filename module="mod_phocaemail_newsletter">FOSS.md</filename>
 		<filename module="mod_phocaemail_newsletter">index.html</filename>
+		<filename module="mod_phocaemail_newsletter">LICENSE</filename>
 		<filename module="mod_phocaemail_newsletter">mod_phocaemail_newsletter.php</filename>
 	</files>
 

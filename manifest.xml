@@ -63,19 +63,19 @@
 		<description><![CDATA[ Phoca Email Newsletter Module - a Joomla! CMS module which displays newsletter sign up form. ]]></description>
 		<element>mod_phocaemail_newsletter</element>
 		<type>module</type>
-		<version>6.0.0</version>
-		<infourl title="Phoca Email Newsletter Module 6.0.0">https://www.phoca.cz/</infourl>
+		<version>6.1.0</version>
+		<infourl title="Phoca Email Newsletter Module 6.1.0">https://www.phoca.cz/</infourl>
 		<downloads>
-			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaEmailNewsletterModule/releases/download/6.0.0/mod_phocaemail_newsletter_v6.0.0.zip</downloadurl>
+			<downloadurl type="full" format="zip">https://github.com/PhocaCz/PhocaEmailNewsletterModule/releases/download/6.1.0/mod_phocaemail_newsletter_v6.1.0.zip</downloadurl>
 		</downloads>
-		<sha512>f51c023a2900151d36807502b8ef66cd8e1b7ac7d52550026a9f25cbdfea3701323ff96db6b673c3efc8cdf3c494f2dc723509a2b46bb1b5c827dd420358164b</sha512>
+		<sha512>5359055a0a0a49a859cadf786f6c0abcc53252eaadec0ad7931cbac933c5d5eb2f74ff5f6bb3995ed17c0ff45446d74d09c1cf9536ede7ed5986a023254d9d47</sha512>
 		<tags>
 			<tag>stable</tag>
 		</tags>
 		<maintainer><![CDATA[ Phoca.cz ]]></maintainer>
 		<maintainerurl>https://www.phoca.cz/</maintainerurl>
 		<section>Updates</section>
-		<targetplatform name="joomla" version="(5|6)\.*"/>
+		<targetplatform name="joomla" version="6\.*"/>
 		<client>site</client>
 	</update>
 </updates>
